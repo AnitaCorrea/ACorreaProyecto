@@ -1,0 +1,57 @@
+@import "_bloques";
+@import "_colorYtipografia";
+@import "_responsive";
+
+
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+    height: 100vh;
+    width:100%;
+}
+
+.estiloFooter{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(201, 200, 200)
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+/*Animacion*/
+.animacion{
+    animation-duration: 3s;
+    animation-name: aparecer;
+     }
+ 
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translate(-500px);
+    }
+    to {
+      opacity: 1;
+        }
+    }
+
+/*Transicion*/
+.transicion{
+    transition: font-size 3s ;
+}
+
+.transition:hover{
+font-size: 48px;
+}
+
+
+
+
+

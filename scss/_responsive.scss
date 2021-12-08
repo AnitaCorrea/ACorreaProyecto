@@ -1,0 +1,114 @@
+/* Nombres areas grid Inicio */
+.headerInicio {
+    grid-area: cabezainicio;  
+}
+.buscadorInicio {
+    grid-area: buscadorinicio;
+}
+.fotosCarrusel {
+    grid-area: carrusel;
+}
+.productos {
+    grid-area: productos;
+}
+.novedades {
+    grid-area: novedades;
+}
+.promociones {
+    grid-area: promociones;
+}
+.registrarme {
+    grid-area: registrarme;
+}
+.tarjetas {
+    grid-area:tarjetas;
+}
+.footerInicio {
+    grid-area:footeri;
+}
+
+/*Grid*/
+.grid-areas {
+    display: grid;
+    grid-template-areas:  
+    /* nombres de la grilla */
+        "cabezainicio cabezainicio cabezainicio"/* 1er fila */
+        "buscadorinicio buscadorinicio buscadorinicio"/* 2da fila */
+        "carrusel carrusel carrusel"/* 3ra fila */
+        "productos novedades novedades"  /* 4ta fila */
+        "promociones registrarme tarjetas"  /* 5ta fila */
+        "footeri footeri footeri" /* 6ta fila */
+        ;
+        /* filas y columnas */
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 250px 50px 400px 400px 300px 100px;
+}
+
+/*Media*/
+
+/*Tablet*/
+    @media (min-width: 600px) and (max-width: 1023px){
+        /*estilos*/
+        body {
+            font-size: 1rem;
+            }
+
+        .sizeFooter{
+           font-size: 12px;
+            }
+        .sizeSubtitulo{
+            font-size: 26px;  
+            }
+
+        .grid-areas {
+            display: grid;
+            grid-template-areas: 
+        /*grilla por areas para tablet */
+        "cabezainicio cabezainicio" /* 1er fila */
+        "buscadorinicio buscadorinicio"/* 2da fila */
+        "carrusel carrusel"/* 3ra fila */
+        "productos novedades"  /* 4ta fila */
+        "promociones registrarme" /* 5ta fila */
+        "tarjetas tarjetas" /* 6ta fila */
+        "footeri footeri" /* 7ma fila */
+        ;
+         /* filas y columnas */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 50px 400px 400px 300px 300px 100px;
+        }
+    }
+
+/*Smartphone*/
+    @media (max-width: 599px){
+        /*estilos*/
+        body {
+        font-size: 0.75rem;
+            }
+
+        .sizeFooter{
+        font-size: 10px;
+            }
+            
+        .sizeSubtitulo{
+        font-size: 24px;  
+            }
+
+        .grid-areas {
+        display: grid;
+        grid-template-areas: 
+        /*grilla por areas para smartphone */
+            "cabezainicio" /* 1er fila */
+            "buscadorinicio"/* 2da fila */
+            "carrusel"/* 3ra fila */
+            "productos"  /* 4ta fila */
+            "novedades" /* 5ta fila */
+            "promociones" /* 6ta fila */
+            "registrarme"  /* 7ma fila */
+            "tarjetas" /* 8va fila */
+            "footeri" /* 9na fila */
+            ;
+             /* filas y columnas */
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 50px 400px 400px 300px 300px 300px 300px 100px;
+        }
+    }

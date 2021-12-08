@@ -1,0 +1,81 @@
+.novedades{
+    background-color:white;
+    padding-top: 15px;
+   
+}
+.novedades__auriculares{
+    background-color: rgb(201, 200, 200);
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.novedades__laptop{
+    background-color: skyblue;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.promo{
+    color:skyblue;
+    text-align: center; 
+    padding-top: 15px;
+}
+
+.promo__desc{
+    color:rgb(9, 179, 150);
+    text-align: center; 
+    background-color: rgb(201, 200, 200);
+    padding-top: 15px
+}
+
+.promo__desc__img{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.promo__sorteo{
+    color:rgb(9, 179, 150);
+    text-align: center;
+    background-color:skyblue;
+    padding-top: 15px
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.contenedor__hijos{
+    padding-bottom: 25px;
+    text-align: center
+}
+
+.titulo{
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo__subtitulo{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: skyblue;
+}
+
+.titulo__subtitulo__item{
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+    background-color: rgb(201, 200, 200);
+}
