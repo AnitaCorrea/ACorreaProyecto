@@ -115,7 +115,11 @@
 }
 
 .fondoHielo {
-  background-color: aliceblue;
+  background-color: #cde1f3;
+}
+
+.fondoverde {
+  background-color: #c0f1e1;
 }
 
 .fondoCeleste {
