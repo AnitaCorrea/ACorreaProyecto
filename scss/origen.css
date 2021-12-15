@@ -153,6 +153,10 @@ h2 {
   font-size: 28px;
 }
 
+.subrayado {
+  text-decoration: underline;
+}
+
 /* Nombres areas grid Inicio */
 .headerInicio {
   -ms-grid-row: 1;
