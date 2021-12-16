@@ -109,6 +109,24 @@
   background-color: #c9c8c8;
 }
 
+.formulario {
+  margin: 5%;
+}
+
+.formulario_seccion {
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.formulario_botones {
+  margin-top: 10px;
+}
+
+.casilleros {
+  margin-left: 26px;
+}
+
 /*Fondos*/
 .fondoNegro {
   background-color: black;
@@ -169,53 +187,46 @@ h2 {
   grid-area: cabezainicio;
 }
 
-.buscadorInicio {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: buscadorinicio;
-}
-
 .fotosCarrusel {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: carrusel;
 }
 
 .productos {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: productos;
 }
 
 .novedades {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: novedades;
 }
 
 .promociones {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: promociones;
 }
 
 .registrarme {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: registrarme;
 }
 
 .tarjetas {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: tarjetas;
 }
 
 .footerInicio {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footeri;
@@ -225,12 +236,12 @@ h2 {
 .grid-areas {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cabezainicio cabezainicio cabezainicio" "buscadorinicio buscadorinicio buscadorinicio" "carrusel carrusel carrusel" "productos novedades novedades" "promociones registrarme tarjetas" "footeri footeri footeri";
+      grid-template-areas: "cabezainicio cabezainicio cabezainicio" "carrusel carrusel carrusel" "productos novedades novedades" "promociones registrarme tarjetas" "footeri footeri footeri";
   /* filas y columnas */
   -ms-grid-columns: 1fr 0.5fr 0.5fr;
       grid-template-columns: 1fr 0.5fr 0.5fr;
-  -ms-grid-rows: 250px 50px 400px 400px 300px 100px;
-      grid-template-rows: 250px 50px 400px 400px 300px 100px;
+  -ms-grid-rows: 250px 420px 400px 300px 100px;
+      grid-template-rows: 250px 420px 400px 300px 100px;
 }
 
 /*Media*/
@@ -249,12 +260,12 @@ h2 {
   .grid-areas {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "cabezainicio cabezainicio" "buscadorinicio buscadorinicio" "carrusel carrusel" "productos novedades" "promociones registrarme" "tarjetas tarjetas" "footeri footeri";
+        grid-template-areas: "cabezainicio cabezainicio" "carrusel carrusel" "productos novedades" "promociones registrarme" "tarjetas tarjetas" "footeri footeri";
     /* filas y columnas */
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 250px 50px 400px 400px 300px 300px 100px;
-        grid-template-rows: 250px 50px 400px 400px 300px 300px 100px;
+    -ms-grid-rows: 250px 420px 400px 300px 300px 100px;
+        grid-template-rows: 250px 420px 400px 300px 300px 100px;
   }
 }
 
@@ -273,12 +284,12 @@ h2 {
   .grid-areas {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "cabezainicio" "buscadorinicio" "carrusel" "productos" "novedades" "promociones" "registrarme" "tarjetas" "footeri";
+        grid-template-areas: "cabezainicio" "carrusel" "productos" "novedades" "promociones" "registrarme" "tarjetas" "footeri";
     /* filas y columnas */
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 250px 50px 400px 400px 300px 300px 300px 300px 100px;
-        grid-template-rows: 250px 50px 400px 400px 300px 300px 300px 300px 100px;
+    -ms-grid-rows: 250px 420px 400px 300px 300px 300px 300px 100px;
+        grid-template-rows: 250px 420px 400px 300px 300px 300px 300px 100px;
   }
 }
 
@@ -304,8 +315,38 @@ body {
   background-color: #c9c8c8;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2%;
+}
+
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
 .carousel-inner img {
   margin: auto;
+}
+
+.espacioCarrusel {
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
 /*Animacion*/

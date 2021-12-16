@@ -15,14 +15,16 @@
 </head>
 <body>
     <header class="fondoNegro">
+      <div class="encabezado">
         <a href="../index.html"><img width="150" src="../imagenes/logoNegro.jpg" alt="Logo"></a>
-        <h1 class="celeste centrarTitulo">De Todo un Poco</h1>  
-               <h2 class="celeste centrarTitulo sizeSubtitulo">Los mejores electrónicos al mejor precio</h2>
-    
-        <nav>           
-        
+        <div>
+          <h1 class="celeste centrarTitulo">De Todo un Poco</h1>  
+          <h2 class="celeste centrarTitulo sizeSubtitulo">Los mejores electrónicos al mejor precio</h2>
+        </div>
+      </div>                  
+      
             <!-- Menú -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="../index.html">Inicio</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -37,10 +39,10 @@
                           Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="productos.html">Auriculares</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Laptos</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Celulares</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Gaming</a></li>
+                          <li><a class="dropdown-item" href="productos.html#auriculares">Auriculares</a></li>
+                          <li><a class="dropdown-item" href="productos.html#laptops">Laptos</a></li>
+                          <li><a class="dropdown-item" href="productos.html#celulares">Celulares</a></li>
+                          <li><a class="dropdown-item" href="productos.html#gaming">Gaming</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -56,32 +58,32 @@
                     </ul>
                   </div>
                 </div>
-              </nav>              
+      </nav>              
                                    
 
     </header>
     
     <main>
     <h2 class="celeste centrarTitulo">Registrarme</h2>
-    <div>
+    <div class="formulario">
     <form action="">
-        <fieldset class="fondoHielo">
+        <fieldset class="fondoHielo formulario_seccion">
             <legend>Información Personal</legend> 
             <label for="nombre">Nombre:</label>           
-            <input type="text"name="nombre"><br>
+            <input class="casilleros" type="text"name="nombre"><br>
             <label for="nombre">Apellido:</label>   
             <input type="text"name="nombre"><br>
             <label for="correo">E-mail:</label>
-            <input type="email"name="correo"><br> 
+            <input class="casilleros" type="email"name="correo"><br> 
             
-            <select name="Estado civil">
+            <select class="formulario_botones" name="Estado civil">
                 <option value="">Estado civil</option>
                 <option value="Soltero">Soltero/a</option>
                 <option value="Casado">Casado/a</option>
             </select>
         </fieldset>    
         
-        <fieldset class="fondoverde">
+        <fieldset class="fondoverde formulario_seccion">
             <legend>Preferencias</legend>
             <div>¿Desea recibir newsletter?</div>   
             <input type="checkbox"name="acepta" value="1">               
@@ -91,9 +93,10 @@
             <textarea name="comentario" cols="30" rows="10"></textarea>              
 
         </fieldset>
-        
+        <div class= "formulario_botones">
         <input type="submit"value="Enviar">
-        <input type="reset"value="Vaciar Formulario">           
+        <input type="reset"value="Vaciar Formulario">  
+        </div>         
     </form>
     </div>
     </main>

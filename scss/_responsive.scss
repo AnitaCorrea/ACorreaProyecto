@@ -2,9 +2,7 @@
 .headerInicio {
     grid-area: cabezainicio;  
 }
-.buscadorInicio {
-    grid-area: buscadorinicio;
-}
+
 .fotosCarrusel {
     grid-area: carrusel;
 }
@@ -33,15 +31,14 @@
     grid-template-areas:  
     /* nombres de la grilla */
         "cabezainicio cabezainicio cabezainicio"/* 1er fila */
-        "buscadorinicio buscadorinicio buscadorinicio"/* 2da fila */
-        "carrusel carrusel carrusel"/* 3ra fila */
-        "productos novedades novedades"  /* 4ta fila */
-        "promociones registrarme tarjetas"  /* 5ta fila */
-        "footeri footeri footeri" /* 6ta fila */
+        "carrusel carrusel carrusel"/* 2da fila */
+        "productos novedades novedades"  /* 3ra fila */
+        "promociones registrarme tarjetas"  /* 4ta fila */
+        "footeri footeri footeri" /* 5ta fila */
         ;
         /* filas y columnas */
         grid-template-columns: 1fr 0.5fr 0.5fr;
-        grid-template-rows: 250px 50px 400px 400px 300px 100px;
+        grid-template-rows: 250px 420px 400px 300px 100px;
 }
 
 /*Media*/
@@ -65,16 +62,15 @@
             grid-template-areas: 
         /*grilla por areas para tablet */
         "cabezainicio cabezainicio" /* 1er fila */
-        "buscadorinicio buscadorinicio"/* 2da fila */
-        "carrusel carrusel"/* 3ra fila */
-        "productos novedades"  /* 4ta fila */
-        "promociones registrarme" /* 5ta fila */
-        "tarjetas tarjetas" /* 6ta fila */
-        "footeri footeri" /* 7ma fila */
+        "carrusel carrusel"/* 2da fila */
+        "productos novedades"  /* 3ra fila */
+        "promociones registrarme" /* 4ta fila */
+        "tarjetas tarjetas" /* 5ta fila */
+        "footeri footeri" /* 6ta fila */
         ;
          /* filas y columnas */
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 50px 400px 400px 300px 300px 100px;
+        grid-template-rows: 250px 420px 400px 300px 300px 100px;
         }
     }
 
@@ -98,17 +94,16 @@
         grid-template-areas: 
         /*grilla por areas para smartphone */
             "cabezainicio" /* 1er fila */
-            "buscadorinicio"/* 2da fila */
-            "carrusel"/* 3ra fila */
-            "productos"  /* 4ta fila */
-            "novedades" /* 5ta fila */
-            "promociones" /* 6ta fila */
-            "registrarme"  /* 7ma fila */
-            "tarjetas" /* 8va fila */
-            "footeri" /* 9na fila */
+            "carrusel"/* 2da fila */
+            "productos"  /* 3ra fila */
+            "novedades" /* 4ta fila */
+            "promociones" /* 5ta fila */
+            "registrarme"  /* 6ta fila */
+            "tarjetas" /* 7ma fila */
+            "footeri" /* 8va fila */
             ;
              /* filas y columnas */
         grid-template-columns: 1fr;
-        grid-template-rows: 250px 50px 400px 400px 300px 300px 300px 300px 100px;
+        grid-template-rows: 250px 420px 400px 300px 300px 300px 300px 100px;
         }
     }

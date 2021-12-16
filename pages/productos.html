@@ -15,15 +15,16 @@
 </head>
 <body>
     <header class="fondoNegro">
+      <div class="encabezado">
         <a href="..//index.html"><img width="150" src="../imagenes/logoNegro.jpg" alt="Logo"></a>
-
-        <h1 class="celeste centrarTitulo">De Todo un Poco</h1>  
+        <div>
+            <h1 class="celeste centrarTitulo">De Todo un Poco</h1>  
             <h2 class="celeste centrarTitulo sizeSubtitulo">Los mejores electrónicos al mejor precio</h2>
-    
-        <nav>           
+        </div>
+      </div>                 
         
             <!-- Menú -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="../index.html">Inicio</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -38,10 +39,10 @@
                           Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="productos.html">Auriculares</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Laptos</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Celulares</a></li>
-                          <li><a class="dropdown-item" href="productos.html">Gaming</a></li>
+                          <li><a class="dropdown-item" href="productos.html#auriculares">Auriculares</a></li>
+                          <li><a class="dropdown-item" href="productos.html#laptops">Laptos</a></li>
+                          <li><a class="dropdown-item" href="productos.html#celulares">Celulares</a></li>
+                          <li><a class="dropdown-item" href="productos.html#gaming">Gaming</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -57,24 +58,15 @@
                     </ul>
                   </div>
                 </div>
-              </nav>
+        </nav>
                        
     </header>  
     <main> 
-        <!--Buscador-->  
-        <nav class=" navbar navbar-light bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand"></a>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Buscar</button>
-            </form>
-          </div>
-        </nav>
+       
             <h2 class="titulo celeste centrarTitulo">Productos</h2>
 
             <div>
-                <h3 class="verde titulo__subtitulo">Auriculares</h3>
+                <h3 id="auriculares" class="verde titulo__subtitulo">Auriculares</h3>
                     <h4 class="titulo__subtitulo__item">Clasicos</h4>
                     <img width="300" src="../imagenes/auricularesVincha.jpeg" alt="AuricularesVincha"> 
                     <img width="300" src="../imagenes/auricularVinchaDos.jpg" alt="AuricularesVinchaDos"> 
@@ -84,21 +76,21 @@
                     <img width="300" src="../imagenes/auricularInDos.jpg" alt="AuricularesInalambricosDos"> 
             </div>
             <div>
-                <h3 class="verde titulo__subtitulo">Laptos</h3>
+                <h3 id="laptops" class="verde titulo__subtitulo">Laptos</h3>
                     <img width="300" src="../imagenes/laptop.jpg" alt="Laptos"> 
                     <img width="300" src="../imagenes/laptopUno.jpg" alt="LaptopUno"> 
                     <img width="300" src="../imagenes/laptopTres.jpg" alt="LaptopTres"> 
                     <img width="300" src="../imagenes/laptopCuatro.jpg" alt="LaptopCuatro"> 
             </div>
             <div>
-                  <h3 class="verde titulo__subtitulo">Celulares</h3>
+                  <h3 id="celulares" class="verde titulo__subtitulo">Celulares</h3>
                     <img width="300" src="../imagenes/celUno.jpg" alt="Celular"> 
                     <img width="300" src="../imagenes/celDos.jpg" alt="CelularDos"> 
                     <img width="300" src="../imagenes/celTres.jpg" alt="CelularTres"> 
                     <img width="300" src="../imagenes/celCuatro.jpg" alt="CelularCuatros"> 
             </div>
             <div>
-                 <h3 class="verde titulo__subtitulo">Gaming</h3>
+                 <h3 id="gaming" class="verde titulo__subtitulo">Gaming</h3>
                     <h4 class="titulo__subtitulo__item">Joystics</h4>
                     <img width="300" src="../imagenes/JoystickUno.jpg" alt="Joystics"> 
                     <img width="300" src="../imagenes/joystickDos.jpg" alt="JoystickDos"> 

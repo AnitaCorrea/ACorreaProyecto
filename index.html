@@ -16,13 +16,14 @@
 
     <body class="grid-areas">
         <header class="fondoNegro headerInicio">
-
-            <img width="150" src="./imagenes/logoNegro.jpg" alt="Logo">
-
-            <h1 class="celeste centrarTitulo">De Todo un Poco</h1>              
-               <h2 class="celeste centrarTitulo sizeSubtitulo">Los mejores electrónicos al mejor precio</h2>
-
-            <!--Menu-->
+            <div class="encabezado">
+                <img width="150" src="./imagenes/logoNegro.jpg" alt="Logo">
+                <div>
+                  <h1 class="celeste centrarTitulo">De Todo un Poco</h1>              
+                  <h2 class="celeste centrarTitulo sizeSubtitulo">Los mejores electrónicos al mejor precio</h2>
+                </div>
+            </div>
+                   <!--Menu-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Inicio</a>
@@ -38,14 +39,14 @@
                         Productos
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="pages/productos.html">Auriculares</a></li>
-                        <li><a class="dropdown-item" href="pages/productos.html">Laptos</a></li>
-                        <li><a class="dropdown-item" href="pages/productos.html">Celulares</a></li>
-                        <li><a class="dropdown-item" href="pages/productos.html">Gaming</a></li>
+                        <li><a class="dropdown-item" href="pages/productos.html#auriculares">Auriculares</a></li>
+                        <li><a class="dropdown-item" href="pages/productos.html#laptops">Laptos</a></li>
+                        <li><a class="dropdown-item" href="pages/productos.html#celulares">Celulares</a></li>
+                        <li><a class="dropdown-item" href="pages/productos.html#gaming">Gaming</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a aria-current="page" href="pages/novedades.html">Novedades</a>
+                      <a class="nav-link" aria-current="page" href="pages/novedades.html">Novedades</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="pages/promociones.html">Promociones</a>
@@ -60,19 +61,9 @@
             </nav>
                      
         </header>
-                 <!--Buscador-->  
-            <nav class=" navbar navbar-light bg-dark buscadorInicio">
-                    <div class="container-fluid">
-                      <a class="navbar-brand"></a>
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                      </form>
-                    </div>
-            </nav>
-                             
+                                            
                <!--Carrusel-->     
-               <article class="fondoCeleste fotosCarrusel">
+               <article class="fondoCeleste fotosCarrusel espacioCarrusel">
                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active imgCarousel">

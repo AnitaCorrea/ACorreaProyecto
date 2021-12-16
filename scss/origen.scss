@@ -22,9 +22,28 @@ body{
     background-color:rgb(201, 200, 200)
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+   
+}
+
+.encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+
 .carousel-inner img {
     margin: auto;
   }
+
+.espacioCarrusel{
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
 
 /*Animacion*/
 .animacion{
